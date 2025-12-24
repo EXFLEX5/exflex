@@ -1,7 +1,7 @@
 // ========== НАСТРОЙКИ ==========
-const SITE_URL = 'https://nikgeniuss.github.io/test/';
-const REPO_OWNER = 'nikgeniuss';
-const REPO_NAME = 'plsystem';
+const SITE_URL = 'https://EXFLEX5.github.io/exflex/';
+const REPO_OWNER = 'EXFLEX5';
+const REPO_NAME = 'exflex';
 const FILE_PATH = 'users.json';
 
 export default {
