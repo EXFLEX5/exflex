@@ -207,7 +207,6 @@ async function updateFile(users, sha, GITHUB_TOKEN) {
 // ========== ОТПРАВКА В TELEGRAM ==========
 async function sendTelegramResponse(botToken, chatId, user, savedSuccess) {
   try {
-    const status = savedSuccess ? '✅ Данные в GitHub' : '⚠️ Ошибка GitHub';
     const repoUrl = `https://github.com/${REPO_OWNER}/${REPO_NAME}/blob/main/${FILE_PATH}`;
     
     await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
@@ -215,13 +214,7 @@ async function sendTelegramResponse(botToken, chatId, user, savedSuccess) {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         chat_id: chatId,
-        text: `🎉 *Привет, ${user.first_name || 'друг'}!*\n\n` +
-              `🆔 Ваш ID: \`${user.id}\`\n` +
-              `👤 Имя: ${user.first_name || 'не указано'}\n` +
-              `📱 @${user.username || 'без username'}\n\n` +
-              `${status}\n` +
-              `📁 Файл: users.json\n\n` +
-              `_Нажмите кнопку ниже:_`,
+        text: `Привет, ${user.first_name || 'друг'}! Авторизация успешна. Можете вернуться на сайт по кнопке ниже.`,
         parse_mode: 'Markdown',
         reply_markup: {
           inline_keyboard: [[
