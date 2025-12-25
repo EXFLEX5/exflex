@@ -1,16 +1,8 @@
 [
   {
-    "id": 8368595700,
-    "username": "Ernestos999",
-    "first_name": "EPHECTO",
-    "last_name": "",
-    "auth_date": "2025-12-24T23:35:27.765Z",
-    "timestamp": 1766619327765
-  },
-  {
     "id": 5446866680,
     "username": "ScacCoin",
-    "first_name": "ScacCoinð¾",
+    "first_name": "ScacCoinÃ°ÂÂÂ¾",
     "last_name": "",
     "auth_date": "2025-12-25T06:41:43.530Z",
     "timestamp": 1766644903530
@@ -18,9 +10,17 @@
   {
     "id": 5054536420,
     "username": "Odeseyyusss",
-    "first_name": "Сеня",
+    "first_name": "Ð¡ÐµÐ½Ñ",
     "last_name": "",
     "auth_date": "2025-12-25T06:59:18.837Z",
     "timestamp": 1766645958837
+  },
+  {
+    "id": 8368595700,
+    "username": "Ernestos999",
+    "first_name": "EPHECTO",
+    "last_name": "",
+    "auth_date": "2025-12-25T22:57:37.211Z",
+    "timestamp": 1766703457211
   }
 ]
